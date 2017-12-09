@@ -1,0 +1,26 @@
+.album-area {
+  // justify-content: center;
+  // height: 100em;
+   margin-left: 8%;
+   // border:4px solid #33FFFF;
+   padding-top:1%;
+   display: grid;
+   grid-template-columns: 2fr 3fr 2.5fr;
+   grid-template-rows: 2fr 1fr 2r;
+   grid-column-gap: 8px;
+   grid-row-gap: 12px;
+}
+.grid-item{ 
+  // border: 2px solid hsla(0, 0%, 0%, 0.5);
+
+}
+.grid-item>img{
+  height: 100%;
+  width: 100%;
+}
+.upload{
+  // border: 1px solid black;
+}
+#preview_img{
+  border: none;
+}

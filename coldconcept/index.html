@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Cold Concept</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico in the root directory -->
+        <script src="https://use.fontawesome.com/d49a6e9654.js"></script>
+        <link rel="stylesheet" href="./scss/normalize.css">
+        <!-- <link rel="stylesheet" href="./scss/main.css"> -->
+        <link rel="stylesheet" href="./scss/style.css">
+         <link rel="stylesheet" href="scss/font-awesome/css/font-awesome.min.css" text ="text/css"/>
+
+        <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+        <script type="text/javascript">
+          /*<![CDATA[ */
+          /*]]>*/
+        </script>
+    </head>
+    <body>
+
+        <header class = "header">
+        <div class = "container"></div>
+        <h1 class = "title">
+        <span>C</span>
+        <span>O</span>
+        <span>L</span>
+        <span>D</span>
+        <span>&nbsp;</span>
+        <span>C</span>
+        <span>O</span>
+        <span>N</span>
+        <span>C</span>
+        <span>E</span>
+        <span>P</span>
+        <span>T</span>
+        </h1>
+        </header>
+        <div  class = "bugger-button" onclick = "hide();" id = "hambuger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class = "black"  id = "black">
+        <nav class = "side-pane" id = "showHide">
+           <span> <img id = "close" class="close" src = "./img/cross.svg"> </span>
+            <ul class = "nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="javascript:open_about();">About</a></li>
+                <li><a href="javascript:open_hide_contact();" >Contact</a></li>
+
+            </ul>
+
+            <ul class = "social">
+            <li class="_kite">
+                 <img class = "fb" src="./img/fb.svg">
+            </li>
+            <li class="_kite">
+                 <img class = "tw" src="./img/tw.svg">
+            </li>
+            <li class="_kite">
+                 <img class = "instagram" src="./img/instagram.svg">
+            </li>
+            </ul>
+
+        </nav>
+            
+        </div>
+        
+        <section class = "album-area" id="photos" >
+              <div class="grid-item"><img src="./img/buttons.jpg"> </div>
+              <div class="grid-item "><img src="./img/branch-1.jpg"></div>
+              <div class="grid-item"><img src="./img/kaguya.png"></div>
+              <div class="grid-item"><img src="./img/branch-2.jpg"></div>
+              <div class="grid-item"><img src="./img/cup-of-coffee.jpg"></div>
+              <div class="grid-item"><img src="./img/home-office.jpg"></div>
+              <div class="grid-item"><img src="./img/macbook.jpg"></div>
+              <div class="grid-item"><img src="./img/pine-leaves.jpg"></div>
+              <div class="grid-item"><img src="./img/pine-tree.jpg"></div>
+
+        <div class = "about" id = "close_about">
+             <h2 class = 'contactme'>about</h2>
+             <img src="./img/cross-ca.svg" class = "about-cross" onclick="close_about()">
+        </div>
+            <div class = 'contact' id = 'close_contact'>
+               <h2 class = 'contactme'>contact</h2>
+           <img src="./img/cross-ca.svg" class = "contact-cross" onclick="close_contact()">
+               <form class = "form">
+                   <input type="Name" name="Name" placeholder ="Name"> 
+                   <input type="Email" name="Email" placeholder ="Email"> 
+                   <textarea type="text" name="Message" placeholder="Message" class= "message"></textarea>
+                   </form>
+            </div>
+        <span class = "next_page">
+            <a  title = "check out my other works" href = "../News" class = "fa fa-arrow-right"></a>
+        </span>
+        <script type = "text/javascript"
+                src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+        </script>
+        <script src = "./js/main.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+</body>
+</html>

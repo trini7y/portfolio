@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Cold Concept</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico in the root directory -->
+        <script src="https://use.fontawesome.com/d49a6e9654.js"></script>
+        <link rel="stylesheet" href="./scss/normalize.css">
+        <!-- <link rel="stylesheet" href="./scss/main.css"> -->
+        <link rel="stylesheet" href="./scss/style.css">
+        <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+        <script type="text/javascript">
+          /*<![CDATA[ */
+          /*]]>*/
+        </script>
+</head>
+<body class="upload">
+	   <form>
+            <label for="file">Choose a file</label><br/>
+            <input type="file" name="myFile" id="upload_image" onchange="previewFile()">
+          </form>
+
+            <img  id="preview_img" src="" height="200" alt="Image preview...">
+            <br/>
+            <button id="upload_btn" class = "upload">Upload</button>
+        </form>
+
+        <script type = "text/javascript"
+                src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+        </script>
+        <script src = "./js/main.js"></script>
+</body>
+</html>

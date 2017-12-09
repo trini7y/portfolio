@@ -1,0 +1,68 @@
+.header{
+  height:80px;
+  background-image:$header-color;
+  width:100%;
+  text-align: center;
+}
+div .title {
+    color: white;
+    opacity: 0.05;
+    font-family: 'Courgette', cursive;
+    display: table;
+    color:#161b24;
+}
+
+h1{
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    padding-top:2%;
+    font-family: 'Nothing You Could Do', cursive ,sans-serif;
+    letter-spacing: 0.05rem;
+    font-size: 20px;
+    line-height: 1.2;
+    text-shadow: -11px 1px 13px $header-color;
+}
+
+.next_page{
+    position: relative;
+    cursor: pointer;
+}
+a.fa-arrow-right{
+    position:fixed;
+    top:50%;
+    background-color:#fff;
+    color:rgba(0,0,0,0.8);
+    background:rgba(234,234,1,0.4);
+    left:94%;
+    font-size: 1.5em;
+    border-radius:0 50% 0 50%;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    box-shadow: rgba(0,0,0,0.2) 3px 2px 8px;
+}
+
+.next_page{
+    position: relative;
+    cursor: pointer;
+}
+a.fa-arrow-right{
+    position:fixed;
+    top:50%;
+    background-color:#fff;
+    color:rgba(0,0,0,0.8);
+    background:rgba(234,234,1,0.4);
+    left:94%;
+    font-size: 1.5em;
+    border-radius:0 50% 0 50%;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    box-shadow: rgba(0,0,0,0.2) 3px 2px 8px;
+}
+// ========================================
+// Media queries
+// ========================================= 
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}

@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Courgette|Nothing+You+Could+Do");
+@import "https://fonts.googleapis.com/css?family=Roboto+Condensed";
+.header {
+  height: 80px;
+  background-image: linear-gradient(100deg, #E71D36 0%, #E751B5 150%);
+  width: 100%;
+  text-align: center; }
+
+div .title {
+  color: white;
+  opacity: 0.05;
+  font-family: 'Courgette', cursive;
+  display: table;
+  color: #161b24; }
+
+h1 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  padding-top: 2%;
+  font-family: 'Nothing You Could Do', cursive ,sans-serif;
+  letter-spacing: 0.05rem;
+  font-size: 20px;
+  line-height: 1.2;
+  text-shadow: -11px 1px 13px linear-gradient(100deg, #E71D36 0%, #E751B5 150%); }
+
+.next_page {
+  position: relative;
+  cursor: pointer; }
+
+a.fa-arrow-right {
+  position: fixed;
+  top: 50%;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(234, 234, 1, 0.4);
+  left: 94%;
+  font-size: 1.5em;
+  border-radius: 0 50% 0 50%;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 2px 8px; }
+
+.next_page {
+  position: relative;
+  cursor: pointer; }
+
+a.fa-arrow-right {
+  position: fixed;
+  top: 50%;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(234, 234, 1, 0.4);
+  left: 94%;
+  font-size: 1.5em;
+  border-radius: 0 50% 0 50%;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 2px 8px; }
+
+/* Small devices (tablets, 768px and up) */
+.album-area {
+  margin-left: 8%;
+  padding-top: 1%;
+  display: grid;
+  grid-template-columns: 2fr 3fr 2.5fr;
+  grid-template-rows: 2fr 1fr 2r;
+  grid-column-gap: 8px;
+  grid-row-gap: 12px; }
+
+.grid-item > img {
+  height: 100%;
+  width: 100%; }
+
+#preview_img {
+  border: none; }
+
+.black {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center; }
+
+nav .nav-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 16em;
+  margin-left: 25%; }
+nav li {
+  font-size: 2em;
+  font-family: 'Roboto Condensed', sans-serif; }
+nav a {
+  color: #FDFFFC;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative; }
+  nav a:active {
+    border: none; }
+  nav a:after {
+    bottom: 0;
+    content: "";
+    height: 2px;
+    right: 0;
+    position: absolute;
+    background: #fff;
+    transition: width .5s ease 0s, left 0.3s ease 0s;
+    width: 0; }
+  nav a:hover:after {
+    width: 100%;
+    left: 0; }
+
+.side-pane {
+  background-image: linear-gradient(120deg, #001526 10%, #161b24 150%);
+  width: 25%;
+  height: 100em;
+  position: fixed;
+  top: 0;
+  margin-left: -50%; }
+
+._kite {
+  cursor: pointer;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #E71D36;
+  transform: rotate(45deg);
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  margin-left: 30px;
+  transition: background-color 2s ease-in-out; }
+  ._kite:before {
+    bottom: 0;
+    content: "";
+    height: 200%;
+    right: 0;
+    position: absolute;
+    background: #E71D36;
+    transition: width 0.8s ease 0s, left 0.7s ease 0s;
+    width: 0; }
+  ._kite:hover:before {
+    width: 100%;
+    left: 0; }
+
+.social {
+  display: inline-flex;
+  padding: 0 3px 0 0;
+  list-style: none;
+  margin-top: 100px;
+  margin-left: 40px; }
+  .social .fb, .social .tw, .social .instagram {
+    width: 30px;
+    height: 30px;
+    transform: rotate(-45deg);
+    margin-top: 5px;
+    margin-left: 5px; }
+
+.bugger-button, .close {
+  width: 3%;
+  margin: 0 0 0 5%;
+  height: 40px;
+  cursor: pointer;
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  transform: translate(-110%, 330px); }
+  .bugger-button div:nth-child(n+1), .close div:nth-child(n+1) {
+    background: #FDFFFC;
+    width: 100%;
+    padding: 0 0 6px 0;
+    margin: 5px 0 0 0;
+    border-radius: 1px;
+    display: block;
+    transition: color 3s ease-in-out; }
+    .bugger-button div:nth-child(n+1):hover, .close div:nth-child(n+1):hover {
+      color: linear-gradient(100deg, #E71D36 0%, #E751B5 150%); }
+
+.close {
+  width: 30.9px;
+  height: 30.9px;
+  transform: translate(-35px, 330px);
+  opacity: 0; }
+
+.contact, .about {
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 500px;
+  background: #FDFFFC;
+  border-radius: 4px;
+  transform: translate(40%, -120%);
+  text-align: center;
+  overflow-y: scroll;
+  margin-top: -50%;
+  position: fixed; }
+  .contact .contactme, .about .contactme {
+    margin-top: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    font-weight: lighter;
+    color: #E71D36;
+    text-transform: uppercase; }
+
+.contact-cross {
+  border-radius: 50%;
+  height: 50px;
+  cursor: pointer;
+  width: 50px;
+  transform: translate(750%, -220%);
+  border: 1px solid #E71D36;
+  transition: background-color 0.8s ease-in-out; }
+  .contact-cross:hover {
+    background-color: rgba(0, 0, 0, 0.3); }
+
+.form {
+  margin-left: 10px; }
+  .form input {
+    height: 40px;
+    background-color: #FDFFFC;
+    width: 30%;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #E71D36;
+    font-size: 2em;
+    color: #E71D36; }
+    .form input:nth-child(2) {
+      margin-left: 5%; }
+    .form input:focus {
+      outline: none; }
+
+.message {
+  height: 200px;
+  width: 50%;
+  background-color: #FDFFFC;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid #E71D36;
+  box-shadow: none;
+  font-size: 1.5em;
+  color: #E71D36;
+  max-width: 50%;
+  max-height: 200px;
+  margin-left: 5%;
+  margin-top: 30px; }
+  .message:focus {
+    outline: none; }
+
+.about .about-cross {
+  border-radius: 50%;
+  height: 50px;
+  cursor: pointer;
+  width: 50px;
+  transform: translate(750%, -220%);
+  border: 1px solid #E71D36;
+  transition: background-color 0.8s ease-in-out; }
+  .about .about-cross:hover {
+    background-color: rgba(0, 0, 0, 0.3); }
+
+body {
+  background-color: #161b24;
+  overflow-x: hidden; }
+
+/*# sourceMappingURL=style.css.map */

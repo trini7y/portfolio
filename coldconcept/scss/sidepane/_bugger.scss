@@ -1,0 +1,33 @@
+.bugger-button {
+  width: 3%;
+  margin: 0 0 0 5%;
+  height:40px;
+  cursor: pointer;
+  z-index:2;
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  transform: translate(-110%, 330px);
+  div:nth-child(n+1) {
+    background: $text-color;
+    width: 100%;
+    padding: 0 0 6px 0;
+    margin: 5px 0 0 0;
+    border-radius:1px;
+    display:block;
+    transition:color 3s ease-in-out;
+    &:hover{
+      color: $header-color;
+    }
+  }
+
+}
+
+.close{
+  width:30.9px;
+  height:30.9px;
+  @extend .bugger-button;
+  transform: translate(-35px, 330px);
+  opacity:0;
+}

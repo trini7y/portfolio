@@ -1,0 +1,15 @@
+.about{
+	@extend .contact;
+ .about-cross{
+ 	border-radius: 50%;
+	height:50px;
+	cursor: pointer;
+	width:50px;
+	transform: translate(750%, -220%);
+	border:1px solid $general;
+	transition:background-color 0.8s ease-in-out;
+	&:hover{
+		background-color:rgba(0,0,0,0.3);
+	}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "trini7y",
+  "version": "1.0.0",
+  "description": "web project",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "trini7y"
+  },
+  "keywords": [
+    "start"
+  ],
+  "author": "Desmond",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}

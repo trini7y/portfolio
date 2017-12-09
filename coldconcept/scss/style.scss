@@ -1,0 +1,21 @@
+$background: #161b24;
+$header-color:linear-gradient(100deg, #E71D36 0%, #E751B5 150%);
+$text-color:#FDFFFC;
+$side-pane:linear-gradient(120deg, #001526 10%, #161b24 150%);
+$general:#E71D36;
+
+@import url('https://fonts.googleapis.com/css?family=Courgette|Nothing+You+Could+Do');
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed';
+
+@import "./_header/header";
+@import "./album/album";
+ //sidepane
+@import "./sidepane/sidepane";
+@import "./sidepane/bugger";
+@import "./contacts/contacts";
+@import "./about/about";
+
+body {
+  background-color:$background;
+  overflow-x: hidden;
+}

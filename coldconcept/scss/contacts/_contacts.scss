@@ -1,0 +1,74 @@
+.contact{
+	top:0;
+	left:0;
+	width:70%;
+	height:500px;
+	background:$text-color;
+	border-radius:4px;
+	transform:translate(40%, -120%);
+	text-align: center;
+	overflow-y: scroll;
+	margin-top:-50%;
+	position:fixed;
+	.contactme{
+		margin-top:10px;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size:3em;
+		text-align:center;
+		font-weight: lighter;
+		color:$general;
+		text-transform: uppercase;
+	}
+}
+.contact-cross{
+	border-radius: 50%;
+	height:50px;
+	cursor: pointer;
+	width:50px;
+	transform: translate(750%, -220%);
+	border:1px solid $general;
+	transition:background-color 0.8s ease-in-out;
+	&:hover{
+		background-color:rgba(0,0,0,0.3);
+	}
+}
+.form{
+	margin-left:10px;
+
+	input{
+		height:40px;
+		background-color:$text-color;
+		width:30%;
+		border-top:0;
+		border-right:0;
+		border-left:0;
+		border-bottom:1px solid $general;
+		font-size: 2em;
+		color:$general;
+		&:nth-child(2){
+		margin-left:5%;
+		}
+		&:focus{
+			outline:none;
+		}
+  	}
+}
+.message{
+		height:200px;
+		width:50%;
+		background-color:$text-color; 
+		border-top:0;
+		border-right:0;
+		border-left:0;
+		border-bottom:1px solid $general;
+		box-shadow: none;
+		font-size: 1.5em;
+		color:$general;
+		max-width:50%;
+		max-height:200px;
+		margin-left:5%;
+		margin-top:30px;
+		&:focus{
+			outline:none;
+		}
+}
