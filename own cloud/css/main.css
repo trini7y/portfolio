@@ -1,0 +1,609 @@
+@charset "utf-8";
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    text-align: center;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face{
+    font-family:"Roboto-Black";
+    font-family: "Roboto-Thin";
+    font-family:"1942";
+    src:url(Roboto-Black.ttf);
+    src:url(Roboto-Thin.ttf);
+    src:url("1942.ttf");
+}
+body{
+    background-color:#fff;
+    overflow-x:hidden;
+ }
+ body::-webkit-scrollbar{
+    width:0.8em;
+}
+body::-webkit-scrollbar-track{
+   -webkit-box-shadow:insect 1px 2px ;
+}
+body::-webkit-scrollbar-thumb{
+    background-color:rgba(0,0,0,0.70);
+    outline:0px solid slategrey;
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px; 
+    border-top-right-radius:5px;
+    border-top-left-radius:5px; 
+}
+body::-moz-scrollbar{
+    width:0.8em;
+}
+body::-moz-scrollbar-track{
+   -moz-box-shadow:insect 1px 2px ;
+}
+body::-moz-scrollbar-thumb{
+    background-color:rgba(0,0,0,0.50);
+    outline:0px solid slategrey;
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px; 
+    border-top-right-radius:5px;
+    border-top-left-radius:5px; 
+}
+body::-ms-scrollbar{
+    width:0.8em;
+}
+body::-ms-scrollbar-track{
+   -ms-box-shadow:insect 1px 2px ;
+}
+body::-ms-scrollbar-thumb{
+    background-color:rgba(0,0,0,0.50);
+    outline:0px solid slategrey;
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px; 
+    border-top-right-radius:5px;
+    border-top-left-radius:5px; 
+}
+ /*.cchub{
+    background-color:#fff;
+    height:20px;
+    width:24%;
+    margin-top:5%;
+    margin-right:-7%;
+    float:right;
+    background-color:rgba(6,248,185,0.30);
+ }
+ .cchub:before{
+    content:"Hello World!";
+    background:#fff;
+ }*/
+ a{
+    text-decoration:none;
+    color:rgb(255,38,70);
+ }
+ @media screen and (min-width:1200px) and (max-width:1400px) {
+ div#body{
+    min-height:800px;
+} 
+
+}
+div#body{
+    background-image:url("../img/Catching-the-Clouds.jpg");
+    width:100%;
+    height:513px;
+    background-repeat:no-repeat no-repeat;
+    background-size:cover;
+    background-position:center center;
+} 
+div#body{
+    background-attachment: fixed;
+    position: relative;
+}
+.title{
+    font-style:"Roboto-Black";
+    float:left;
+    margin:4%;
+    font-size:2em;
+    color:rgb(255,38,70);
+}
+#about{
+    float:right;
+    margin-top:4.5%;
+    padding-left:3%;
+    padding-right:3%;
+    margin-right:1%;
+    color:rgb(255,38,70);
+    border:1px solid rgb(255,38,70);
+    border-radius:10px;
+    font-style:"Roboto-Thin";
+    font-size:1.6em;
+    -webkit-transition:2s, 2s, background-color,border;
+    -moz-transition:2s, 2s, background-color,border;
+    -ms-transition:2s, 2s, background-color,border;
+    -o-transition:2s, 2s, background-color,border;
+
+}
+#about:hover{
+  background-color:rgba(2,25,255,0.20);
+}
+
+.main{
+    padding-top:19%;
+    font-family:"1942";
+}
+.main#main_name{
+    margin-bottom:4%;
+}
+.main>#enter_owncloud{
+    margin-top:10%; 
+}
+#main_name{
+    text-align:center;
+    font-size:6.5em;
+    color:rgb(255,38,70); 
+    cursor:pointer;
+    -webkit-text-shadow:-3px 4px 5px rgba(0,0,0,0.40);
+    -moz-text-shadow:-3px 4px 5px rgba(0,0,0,0.40);
+    -o-text-shadow:-3px 4px 5px rgba(0,0,0,0.40);
+    -ms-text-shadow:-3px 4px 5px rgba(0,0,0,0.40);
+
+}
+
+#enter_owncloud{
+    padding-left:3%;
+    padding-right:3%;
+    padding-top:2%;
+    padding-bottom:4%;
+    text-align:center;
+    color:rgb(6,248,185);
+    border:1px solid rgb(255,38,70);
+    border-radius:10px;
+    font-family:"1942";
+    font-size:2em;
+    -webkit-box-shadow:-3px 4px 5px rgba(0,0,0,0.40),3px -4px 5px rgba(0,0,0,0.40);
+    -moz-box-shadow:-3px 4px 5px rgba(0,0,0,0.40),3px -4px 5px rgba(0,0,0,0.40);
+    -o-box-shadow:-3px 4px 5px rgba(0,0,0,0.40),3px -4px 5px rgba(0,0,0,0.40);
+    -ms-box-shadow:-3px 4px 5px rgba(0,0,0,0.40),3px -4px 5px rgba(0,0,0,0.40);
+    -webkit-transition:2s, 2s, background-color,border;
+    -moz-transition:2s, 2s, background-color,border;
+    -ms-transition:2s, 2s, background-color,border;
+    -o-transition:2s, 2s, background-color,border;
+}
+#enter_owncloud:hover{
+  background-color:rgba(6,248,185,0.20);
+}
+.about{
+    width:100%;
+    height:70%;
+}
+.cloud{
+    text-align:center;
+    font-size:3em;
+    font-family:"1942";
+    color:#3ebfbb;
+}
+.about_owncloud{
+    border-bottom:1px solid #091040 ;
+    height:100px;
+    margin-bottom:5%;
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+    box-shadow:5px 5px 5px rgba(9,16,64,0.40),-5px -5px 5px rgba(9,16,64,0.40);
+    -webkit-box-shadow:0px 3px 3px rgba(9,16,64,0.40);
+     -moz-box-shadow:0px 5px 5px rgba(9,16,64,0.40);
+     -o-box-shadow:0px 3px 3px rgba(9,16,64,0.40);
+     -ms-box-shadow:0px 3px 3px rgba(9,16,64,0.40);
+}
+.about_page{
+     width:61%;
+     height:90%;
+     background-color:rgb(9,16,64);
+     margin-left:21%;
+     border-radius:5px;
+     margin-bottom:5%;
+     box-shadow:5px 5px 5px rgba(9,16,64,0.40),-5px -5px 5px rgba(9,16,64,0.40);
+     -webkit-box-shadow:5px 5px 5px rgba(9,16,64,0.40),-5px -5px 5px rgba(9,16,64,0.40);
+     -moz-box-shadow:5px 5px 5px rgba(9,16,64,0.40),-5px -5px 5px rgba(9,16,64,0.40);
+     -o-box-shadow:5px 5px 5px rgba(9,16,64,0.40),-5px -5px 5px rgba(9,16,64,0.40);
+     -ms-box-shadow:5px 5px 5px rgba(9,16,64,0.40),-5px -5px 5px rgba(9,16,64,0.40);
+}
+@-webkit-keyframes bounce{
+  from { 
+    top: 0; left: 0;
+     }
+  to     {
+   top: 100px; left: 100px; 
+}
+    0%{
+        padding-top:1%;
+    }
+    100%{
+        padding-bottom:1%;
+    }
+}
+@-o-keyframes bounce{
+  from {
+   top: 0; left: 0; 
+}
+  to   { 
+    top: 100px; left: 100px; 
+}
+    0%{
+        padding-top:1%;
+    }
+    100%{
+        padding-bottom:1%;
+    }
+}
+@-moz-keyframes bounce{
+    from {
+     top: 0; left: 0; 
+ }
+  to   {
+   top: 100px; left: 100px;
+    }
+    0%{
+        padding-top:1%;
+    }
+    100%{
+        padding-bottom:1%;
+    }
+}
+@keyframes bounce{
+    from {
+        top: 0; left: 0;
+         }
+  to   {
+   top: 100px; left: 100px; 
+}
+    0%{
+        padding-top:1%;
+    }
+    100%{
+        padding-bottom:1%;
+    }
+}
+@-ms-keyframes bounce{
+    from {
+     top: 0; left: 0; 
+ }
+  to   {
+   top: 100px; left: 100px;
+    }
+    0%{
+        padding-top:1%;
+    }
+     100%{
+        padding-top:1%;
+    }
+}
+.fa-cloud{
+    font-size:5em;
+    margin-top:2%;
+    color:#4eb1ba;
+    -webkit-animation:bounce 1s infinite alternate ease-out;
+    -moz-animation:bounce 1s infinite alternate ease-out;
+    -o-animation:bounce 1s infinite alternate ease-out;
+    -ms-animation:bounce 1s infinite alternate ease-out;
+    animation:bounce 1s infinite alternate ease-out;
+}
+.write_up{
+    margin-top:5%;
+    font-family:"Roboto-Thin";
+    color:#4eb1ba;
+    font-size:2em;
+    margin-bottom:10%;
+}
+.footer{
+    width:100%;
+    height:100px;
+    background-color:rgb(37,43,56);
+}
+.h3{
+   text-align:left;
+   font-family:"Roboto-Thin";
+   color:#4eb1ba;
+   padding-top:3%;
+   padding-left:3%;
+}
+.next_page{
+    position: relative;
+    cursor: pointer;
+}
+a.fa-arrow-right{
+    position:fixed;
+    top:50%;
+    background-color:#fff;
+    color:rgba(0,0,0,0.8);
+    background:rgba(234,234,1,0.4);
+    left:94%;
+    font-size: 1.5em;
+    border-radius:0 50% 0 50%;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    box-shadow: rgba(0,0,0,0.2)-3px 2px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
